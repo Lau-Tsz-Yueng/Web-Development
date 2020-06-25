@@ -1,0 +1,26 @@
+
+1. Web 基础知识
+
+World Wide Web 即全球万维网
+万维网的工作原理是：当你请求一个网络资源的时候，应该在浏览器上输入所要访问网页的统一资源定位符（Uniform Resource Locator，URL），当然，也可以通过超链接方式链接定位到要请求的那个网页或静/动态资源。
+URL=传输协议+主机名+端口号+（目录）文件名。
+传输协议一般是http（HyperText Transfer Protocol，超文本传输协议）或https（HyperText Transfer Protocol over Secure SocketLayer，安全套接字层超文本传输协议）。
+主机名这里主要指服务（www）+域名（如:google.com）。
+端口号是可选的，没有给出的话，默认端口一般是指80号端口（http协议使用的80端口，https协议使用的443端口）。
+目录的出现是在网站结构复杂时，某些资源会放到某个目录下或若干个目录下，这样就构成了文件的路径。
+
+2. Flask小程序
+Web服务器使用一种名为Web服务器网关接口（Web Server Gateway Interface，WSGI）的协议，把接收自客户端的所有请求都转给这个对象进行处理。
+
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def index():
+    return 'Hello world!'
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host='127.0.0.1', port=8888)
