@@ -91,6 +91,116 @@ html使用<img>标签在网页中插入图片
 
 2.4 超链接标签
 
+Link or Hyperlink
+超文本
+一个超文本系统由节点和链接组成
+节点可以是文本 图片 音频 视频 程序 等内容
+
+超链接是超文本的一个重要特征！
+
+---------------------------------------------
+
+2.4.1 超链接的基本格式
+
+<a href = "链接目标"> 链接源 </a>
+
+例如:
+<a href = "http://baidu.com"> baidu </a>
+
+---------------------------------------------
+
+2.4.2 URL链接
+一般指本地站点以外文档的链接
+
+<a href = http://www.123123.com/index.html> 首页 </a>
+---------------------------------------------
+
+
+2.4.3 本地链接
+
+在一台机器上对不同文件进行链接的本地链接
+
+1. 链接到同一目录下的文件
+<a href ="目标文件名.html" 链接源 </a>
+
+2. 链接到下一级目录中的文件
+<a href = "子目录名/目标文件名.html"> 链接源 </a>
+
+3. 连接到上一级目录的文件
+<a href = "../子目录名/目标文件名.html"> 链接源 </a>
+
+4. 链接同级目录中的文件
+<a href = "../子目录名/目标文件名.html"> 链接源 </a>
+---------------------------------------------
+
+2.4.4 书签链接
+
+定义书签的形式
+<a id = "书签名称"> 书签内容 </a>
+
+<a name = "top" id = "top"></a>
+
+<a href = "#书签名称"> 链接源 </a>
+
+<span id="top"></span>
+
+<p><a href = "#top"> 返回顶部 </a></p>
+
+---------------------------------------------
+
+2.4.5 下载文件链接
+
+<a href = "目标文件路径/下载文件名"> 链接源 </a>
+
+2.4.6 邮件链接
+<a href = "mailto:E-email 地址" 链接源 </a>
+
+---------------------------------------------
+
+2.5 插入多媒体
+
+2.5.1 在外部窗口中播放多媒体
+
+<p><a href = "rsc/ybsp.wmv" WindowsMovieMaker 样本视频 </a></p>
+
+
+2.5.2 在当前文档中播放音频
+
+1. 使用<embed>标签播放音乐
+嵌入音频文件
+
+< embed src = "rsc/adls.mp3"/>
+
+<embed src = "rcs/asd.mp3" hidden="true" autostart="true" loop="true"/>
+
+
+
+2. 使用<object>标签播放音频
+<object data="rsc/adls.mp3"></object>
+
+3. 使用HTML5 <audio> 标签播放音频
+<audio src="asdasd/asdsad.mp3" controls="controls">
+
+</audio>
+
+-----------------------------------------------------
+
+2.5.3 在当前文档中播放音频
+
+1. 使用<embed>标签播放视频
+<embed width="320" height="240" src="rsc/mas.swf"/>
+
+2. 使用<object>标签播放视频
+<object width="320" heigt="240" data="sad/asd.swf"></object>
+
+3. 使用HTML5<video>标签播放视频
+
+<video src="地址" controls="controls">
+
+</video>
+
+4. 视频网站辅助解决方案
+<embed src="http://bilibili/AV12312321.avi" width="480" height="400" type="application/x - shockwave - flash"
 
 
 
